@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+   <!-- <android.support.v7.widget.RecyclerView
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />-->
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:src="@drawable/timg1"
+
+        android:layout_margin="15dp"
+        android:id="@+id/work"/>
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:layout_margin="15dp"
+       android:layout_alignParentRight="true"
+        android:src="@drawable/addnew"
+        android:id="@+id/addpicture"
+        android:adjustViewBounds="true"/>
+
+</RelativeLayout>

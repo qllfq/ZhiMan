@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:background="@drawable/bgmine"
+    >
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/head"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="18dp"
+        />
+</RelativeLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/bg2"
+        android:gravity="center"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="河马叔叔"
+            android:textSize="20dp"
+            android:layout_margin="10dp"
+            android:textColor="#000000"
+            />
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="45dp"
+            android:src="@drawable/switchfs"
+            android:layout_marginLeft="80dp"
+            />
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="45dp"
+            android:src="@drawable/switchgz"
+            android:layout_marginLeft="15dp"
+            />
+    </LinearLayout>
+        <com.astuetz.PagerSlidingTabStrip
+            android:id="@+id/pst"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:textColor="@color/colorAccent"
+            android:elevation="4dp"
+            app:pstsIndicatorColor="@color/yellow"
+            app:pstsIndicatorHeight="3dp"
+
+            app:pstsShouldExpand="true"/>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="1"
+            android:background="@android:color/white" />
+
+
+
+
+</LinearLayout>
